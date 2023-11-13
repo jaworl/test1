@@ -44,8 +44,6 @@ class Teacher :
     def set_id(self , id) :
         self.id = id
 
-#setter and getter
-
 def findTeacherByID(id) :
     for t in Teacher.teachers :
         if t.ID == id :
