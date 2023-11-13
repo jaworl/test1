@@ -11,7 +11,7 @@
 #             Control.Student.show()
 id=0
 all_id = [0]
-teacherInClass = []
+teacherInClass = [0]
 
 def teachers_reagester ():
     global id
@@ -26,7 +26,7 @@ def teachers_reagester ():
     teachExt = input("teaching experiences = ")
     idt += 1
     all_id.append(id)
-    teacherInClass = id
+    teacherInClass.append(name + last_name)
 
     teacherInClass[id] = Teacher(name,last_name,age,id,clac,qualificalion)
     print ("you have been registerd with these information : ")
@@ -45,12 +45,18 @@ def teachers_reagester ():
      fathername = input("father's name: ")
 SignUp()
 
-
+    def LogIn() :
+        name = input("enter your name: ")
+        last_name = input("enter your lastname: ")
+        if (name + last_name) in teacherInClass :
+            ID = input("enter your ID: ")
+        
+            
 
 def show ():
     menu () 
     if menu() == 1 :
-        TorS = int(input("1.you are a teacher/n2.you are a student"))
+        TorS = int(input("1.you are a teacher 2.you are a student"))
         if TorS == 1 :
             teachers_reagester()
         if TorS == 2 :
