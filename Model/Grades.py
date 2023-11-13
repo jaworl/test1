@@ -1,7 +1,6 @@
 import Model.Exam
 class Grades :
     def __init__ (self , name , lName) :
-        # self.examResults = []
         self.name = name
         self.lName = lName
         
@@ -34,7 +33,6 @@ class Grades :
     def get_dini(self) :
         return self.dini
         
-        #continuio
     def set_math(self,math):
         self.math = math
     def set_biology(self,biology):
