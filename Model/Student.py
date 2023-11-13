@@ -1,8 +1,9 @@
 class Student :
-    def __init__ (self , name , lastname , id , classroom , address , postcode , telephone , dishis , moadel , fatherName) :
+    students = []
+    ID =1
+    def __init__ (self , name , lastname , classroom , address , postcode , telephone , dishis , moadel , fatherName) :
          self.name = name
          self.lastname = lastname
-         self.id = id
          self.classroom = classroom
          self.address = address
          self.postcode = postcode
@@ -10,6 +11,9 @@ class Student :
          self.dishis = dishis
          self.moadel = moadel
          self.fatherName = fatherName
+         self.id = Student.ID
+         Student.ID +=1 
+         Student.students.append(self)
     
     def get_name(self) :
          return self.name
