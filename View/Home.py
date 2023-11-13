@@ -9,23 +9,43 @@
 #             Control.Exam
 #         else :
 #             Control.Student.show()
+id=0
+all_id = [0]
+teacherInClass = []
+
+def teachers_reagester ():
+    global id
+    global teacherInClass
+    print("answer the questions below to complete youre registeration : ")
+    name = input("name = ")
+    last_name = input("last name = ")
+    lesson = input("lesson = ")
+    telephone = input("tele = ")
+    qualificalion = input("qualification = ")
+    age = input("age = ")
+    teachExt = input("teaching experiences = ")
+    idt += 1
+    all_id.append(id)
+    teacherInClass = id
+
+    teacherInClass[id] = Teacher(name,last_name,age,id,clac,qualificalion)
+    print ("you have been registerd with these information : ")
+    print(teacherInClass)
+
+ def SignUp() :
+     name = input("enter student's name: ")
+     lastname = input("lastname: ")
+     id = input("id: ")
+     classroom = input("classroom: ")
+     address = input("address: ")
+     postcode = input("postcode: ")
+     telephone = input("telephone: ")
+     dishis = input("diseases history: ")
+     moadel = input("moadel: ")
+     fathername = input("father's name: ")
+SignUp()
 
 
-
-# def SignUp() :
-#     name = input("enter student's name: ")
-#     lastname = input("lastname: ")
-#     id = input("id: ")
-#     classroom = input("classroom: ")
-#     address = input("address: ")
-#     postcode = input("postcode: ")
-#     telephone = input("telephone: ")
-#     dishis = input("diseases history: ")
-#     moadel = input("moadel: ")
-#     fathername = input("father's name: ")
-# SignUp()
-
-from Control import all_id
 
 def show ():
     menu () 
