@@ -2,6 +2,9 @@ import Model.Exam
 class Grades :
     def __init__ (self) :
         # self.examResults = []
+        self.name = name
+        self.lName = lName
+        
         self.math = []
         self.biology = []
         self.physics = []
