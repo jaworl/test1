@@ -26,6 +26,14 @@ class Grades :
     def get_geology(self) :
         return self.chemistry
     def get_arabic(self) :
+        def get_arabic(self) :
+        return self.arabic
+    def get_history(self) :
+        return self.history
+    def get_english(self) :
+        return self.english
+    def get_dini(self) :
+        return self.dini
         #continuio
     def addToExam(exam) :
         if exam == "math" :
