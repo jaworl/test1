@@ -45,11 +45,17 @@ def teachers_reagester ():
      fathername = input("father's name: ")
 SignUp()
 
-    def LogIn() :
+ def LogIn() :
         name = input("enter your name: ")
         last_name = input("enter your lastname: ")
         if (name + last_name) in teacherInClass :
             ID = input("enter your ID: ")
+        Index = teacherInClass.index(name+last_name)
+        if ID == Index :
+            print("you loged in")
+        else :
+            print("wrong id.try again")
+                
         
             
 
