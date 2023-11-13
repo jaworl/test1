@@ -13,5 +13,5 @@ def TakeExam() :
     f.write("Score: " + score + "\n")
     f.write("Rank: " + rank + "\n")
     f.close()
-
+#complete
 TakeExam()
