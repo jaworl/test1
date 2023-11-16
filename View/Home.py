@@ -46,6 +46,7 @@ def teachers_reagester ():
 SignUp()
 
  def LogIn() :
+     
         name = input("enter your name: ")
         last_name = input("enter your lastname: ")
         if (name + last_name) in teacherInClass :
