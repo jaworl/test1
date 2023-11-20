@@ -69,8 +69,8 @@ studentInClass = [0]
                     print("you loged in")
                 else :
                     print("wrong id.try again")
-                else :
-                  print("error")
+            else :
+                print("error")
        
         if (name + last_name) in teacherInClass :
             ID = input("enter your ID: ")
