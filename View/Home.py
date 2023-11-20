@@ -87,6 +87,9 @@ studentInClass = [0]
             else :
                 print("error")
 
+       elif TorS == 0 :
+           print("welcome dear ADMIN")
+
 def menu():
     choos = int(input("1.sign up /n2.log in")
     if menu() == 1 :
