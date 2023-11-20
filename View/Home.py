@@ -9,33 +9,38 @@
 #             Control.Exam
 #         else :
 #             Control.Student.show()
-id=0
+idt=0
 all_id = [0]
 teacherInClass = [0]
 
-def teachers_reagester ():
+def SignUpTea():
     global id
     global teacherInClass
+    global all_id
     print("answer the questions below to complete youre registeration : ")
     name = input("name = ")
     last_name = input("last name = ")
     lesson = input("lesson = ")
-    telephone = input("tele = ")
+    telephone = input("telephone = ")
     qualificalion = input("qualification = ")
     age = input("age = ")
     teachExt = input("teaching experiences = ")
     idt += 1
-    all_id.append(id)
+    all_id.append(idt)
     teacherInClass.append(name + last_name)
 
-    teacherInClass[id] = Teacher(name,last_name,age,id,clac,qualificalion)
+    teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
 
- def SignUp() :
+ids=0
+studentInClass = [0]
+ def SignUpStu() :
+     global id
+     global studentInClass
+     global all_id
      name = input("enter student's name: ")
      lastname = input("lastname: ")
-     id = input("id: ")
      classroom = input("classroom: ")
      address = input("address: ")
      postcode = input("postcode: ")
@@ -43,7 +48,14 @@ def teachers_reagester ():
      dishis = input("diseases history: ")
      moadel = input("moadel: ")
      fathername = input("father's name: ")
-SignUp()
+     ids += 1
+     all_id.append(ids)
+     studentInClass.append(name + lastname)
+
+     studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
+     print ("you have been registerd with these information : ")
+     print(studentInClass)
+
 
  def LogIn() :
      
