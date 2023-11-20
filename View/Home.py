@@ -58,9 +58,20 @@ studentInClass = [0]
 
 
  def LogIn() :
-     
-        name = input("enter your name: ")
-        last_name = input("enter your lastname: ")
+        TorS = int(input("1.teacher 2.student"))
+        if TorS == 1 :
+            name = input("enter your name: ")
+            last_name = input("enter your lastname: ")
+            if (name + last_name) in teacherInClass :
+                ID = input("enter your ID: ")
+                Index = teacherInClass.index(name+last_name)
+                if ID == Index :
+                    print("you loged in")
+                else :
+                    print("wrong id.try again")
+                else :
+                  print("error")
+       
         if (name + last_name) in teacherInClass :
             ID = input("enter your ID: ")
         Index = teacherInClass.index(name+last_name)
@@ -68,7 +79,17 @@ studentInClass = [0]
             print("you loged in")
         else :
             print("wrong id.try again")
-                
+
+
+def menu():
+    choos = int(input("1.sign up /n2.log in")
+    if menu() == 1 :
+        TorS = int(input("1.teacher 2.student"))
+        if TorS == 1 :
+            SignUpTea()
+        if TorS == 2 :
+            SignUpStu()
+    if menu() == 2 :
         
             
 
