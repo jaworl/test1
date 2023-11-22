@@ -9,7 +9,7 @@
 #             Control.Exam
 #         else :
 #             Control.Student.show()
-idt=0
+#idt=0
 all_id = [0]
 teacherInClass = [0]
 all_members = [0]
@@ -27,11 +27,11 @@ def SignUpTea():
     qualificalion = input("qualification = ")
     age = input("age = ")
     teachExt = input("teaching experiences = ")
-    idt += 1
-    all_id.append(idt)
+    #idt += 1
+    #all_id.append(idt)
     teacherInClass.append(name + last_name)
     all_members.append(name + lastname)
-    teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
+    #teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
 
