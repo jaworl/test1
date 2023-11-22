@@ -12,8 +12,10 @@
 idt=0
 all_id = [0]
 teacherInClass = [0]
+all_members = [0]
 
 def SignUpTea():
+    global all_members
     global id
     global teacherInClass
     global all_id
@@ -28,7 +30,7 @@ def SignUpTea():
     idt += 1
     all_id.append(idt)
     teacherInClass.append(name + last_name)
-
+    all_members.append(name + lastname)
     teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
@@ -36,9 +38,11 @@ def SignUpTea():
 ids=0
 studentInClass = [0]
  def SignUpStu() :
+     global all_members
      global id
      global studentInClass
      global all_id
+     print("answer the questions below to complete youre registeration : ")
      name = input("enter student's name: ")
      lastname = input("lastname: ")
      classroom = input("classroom: ")
@@ -51,11 +55,10 @@ studentInClass = [0]
      ids += 1
      all_id.append(ids)
      studentInClass.append(name + lastname)
-
+     all_members.append(name + lastname)
      studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
      print ("you have been registerd with these information : ")
      print(studentInClass)
-
 
  def LogIn() :
      global teacherInClass
@@ -91,27 +94,15 @@ studentInClass = [0]
            print("welcome dear ADMIN")
 
 def menu():
-    choos = int(input("1.sign up / 2.log in")
-    if menu() == 1 :
+    choose = int(input("1.sign up / 2.log in")
+    if choose == 1 :
         TorS = int(input("1.teacher 2.student"))
         if TorS == 1 :
             SignUpTea()
         if TorS == 2 :
             SignUpStu()
-    if menu() == 2 :
+    if choose == 2 :
+        LogIn()
+        
         
             
-
-def show ():
-    menu () 
-    if menu() == 1 :
-        TorS = int(input("1.you are a teacher 2.you are a student"))
-        if TorS == 1 :
-            teachers_reagester()
-        if TorS == 2 :
-            students_register()
-    if menu() == 2 :
-        get_id = int(input("enter your id to log in : "))
-        if get_id in all_id :
-            print()
-show()
