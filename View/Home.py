@@ -95,7 +95,7 @@ studentInClass = [0]
             else :
                 print("error")
 
-       elif TorS == 0 :
+       elif TorS == 0
            print("welcome dear ADMIN")
 
 def menu():
@@ -108,6 +108,6 @@ def menu():
             SignUpStu()
     if choose == 2 :
         LogIn()
-        
+        #:)
         
             
