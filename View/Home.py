@@ -91,7 +91,7 @@ studentInClass = [0]
            print("welcome dear ADMIN")
 
 def menu():
-    choos = int(input("1.sign up /n2.log in")
+    choos = int(input("1.sign up / 2.log in")
     if menu() == 1 :
         TorS = int(input("1.teacher 2.student"))
         if TorS == 1 :
