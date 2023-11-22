@@ -19,7 +19,7 @@ def SignUpTea():
     global id
     global teacherInClass
     global all_id
-    print("answer the questions below to complete youre registeration : ")
+    print("answer the questions below to complete your registeration : ")
     name = input("name = ")
     last_name = input("last name = ")
     lesson = input("lesson = ")
@@ -30,8 +30,10 @@ def SignUpTea():
     #idt += 1
     #all_id.append(idt)
     teacherInClass.append(name + last_name)
-    all_members.append(name + lastname)
+    all_members.append(name + last_name)
+    id = all_members.index(name + last_name)
     #teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
+    memberInClass[id] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
 
@@ -52,11 +54,14 @@ studentInClass = [0]
      dishis = input("diseases history: ")
      moadel = input("moadel: ")
      fathername = input("father's name: ")
-     ids += 1
-     all_id.append(ids)
+     #ids += 1
+     #all_id.append(ids)
      studentInClass.append(name + lastname)
      all_members.append(name + lastname)
-     studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
+     id = all_members.index(name + lastname)
+     
+     #studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
+     memberInClass[id] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
      print ("you have been registerd with these information : ")
      print(studentInClass)
 
@@ -69,7 +74,7 @@ studentInClass = [0]
             last_name1 = input("enter your lastname: ")
             if (name1 + last_name1) in teacherInClass :
                 ID1 = input("enter your ID: ")
-                Index1 = teacherInClass.index(name+last_name)
+                Index1 = all_members.index(name+last_name)
                 if ID1 == Index1 :
                     print("you loged in")
                 else :
@@ -82,7 +87,7 @@ studentInClass = [0]
             last_name2 = input("enter your lastname: ")
             if (name2 + last_name2) in studentInClass :
                 ID2 = input("enter your ID: ")
-                Index2 = studentInClass.index(name+last_name)
+                Index2 = all_members.index(name+last_name)
                 if ID2 == Index2 :
                     print("you loged in")
                 else :
