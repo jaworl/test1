@@ -33,7 +33,7 @@ def SignUpTea():
     all_members.append(name + last_name)
     id = all_members.index(name + last_name)
     #teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
-    memberInClass[id] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
+    memberInClass[id] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp , id)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
 
@@ -61,7 +61,7 @@ studentInClass = [0]
      id = all_members.index(name + lastname)
      
      #studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
-     memberInClass[id] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
+     memberInClass[id] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername , id)
      print ("you have been registerd with these information : ")
      print(studentInClass)
 
