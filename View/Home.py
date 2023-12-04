@@ -1,30 +1,7 @@
 import Model.Teacher
 import Model.Student
-
-all_id = [0]
-teacherInClass = [0]
-all_members = [0]
-
-def SignUpTea():
-    global all_members
-    global id
-    global teacherInClass
-    global all_id
-    print("answer the questions below to complete your registeration : ")
-    name = input("name = ")
-    last_name = input("last name = ")
-    lesson = input("lesson = ")
-    telephone = input("telephone = ")
-    qualificalion = input("qualification = ")
-    age = input("age = ")
-    teachExp = input("teaching experiences = ")
-    teacherInClass.append(name + last_name)
-    all_members.append(name + last_name)
-    id = all_members.index(name + last_name)
-    info = Model.Teacher.Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp , id)
-    print ("you have been registerd with these information : ")
-    print(teacherInClass)
-
+import Control.Teacher
+import Control.Student
 ids=0
 studentInClass = [0]
 def SignUpStu() :
@@ -87,9 +64,9 @@ def menu():
     if choose == 1 :
         TorS = int(input("1.teacher 2.student"))
         if TorS == 1 :
-            SignUpTea()
+            Control.Teacher.SignUpTea()
         if TorS == 2 :
-            SignUpStu()
+            Control.Student.SignUpStu()
     if choose == 2 :
         LogIn()
         #:)
