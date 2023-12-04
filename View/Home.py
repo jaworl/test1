@@ -1,15 +1,6 @@
-# import Control.Exam
-# import Control.Student
-# def menu() :
-#     while True :
-#         choise = int(input("Choose one item: 1- SignUp | 2- Take Exam | 3- Show Informations"))
-#         if choise == 1 :
-#             Control.Student
-#         elif choise == 2 :
-#             Control.Exam
-#         else :
-#             Control.Student.show()
-#idt=0
+import Model.Teacher
+import Model.Student
+
 all_id = [0]
 teacherInClass = [0]
 all_members = [0]
@@ -26,20 +17,20 @@ def SignUpTea():
     telephone = input("telephone = ")
     qualificalion = input("qualification = ")
     age = input("age = ")
-    teachExt = input("teaching experiences = ")
+    teachExp = input("teaching experiences = ")
     #idt += 1
     #all_id.append(idt)
     teacherInClass.append(name + last_name)
     all_members.append(name + last_name)
     id = all_members.index(name + last_name)
     #teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
-    memberInClass[id] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp , id)
+    info = Model.Teacher.Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp , id)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
 
 ids=0
 studentInClass = [0]
- def SignUpStu() :
+def SignUpStu() :
      global all_members
      global id
      global studentInClass
@@ -61,20 +52,20 @@ studentInClass = [0]
      id = all_members.index(name + lastname)
      
      #studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
-     memberInClass[id] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername , id)
+     info = Model.Student.Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername , id)
      print ("you have been registerd with these information : ")
      print(studentInClass)
 
- def LogIn() :
-     global teacherInClass
-     global studentInClass
+def LogIn() :
+        global teacherInClass
+        global studentInClass
         TorS = int(input("1.teacher 2.student"))
         if TorS == 1 :
             name1 = input("enter your name: ")
             last_name1 = input("enter your lastname: ")
             if (name1 + last_name1) in teacherInClass :
                 ID1 = input("enter your ID: ")
-                Index1 = all_members.index(name+last_name)
+                Index1 = all_members.index(name1 + last_name1)
                 if ID1 == Index1 :
                     print("you loged in")
                 else :
@@ -87,7 +78,7 @@ studentInClass = [0]
             last_name2 = input("enter your lastname: ")
             if (name2 + last_name2) in studentInClass :
                 ID2 = input("enter your ID: ")
-                Index2 = all_members.index(name+last_name)
+                Index2 = all_members.index(name2 + last_name2)
                 if ID2 == Index2 :
                     print("you loged in")
                 else :
@@ -95,11 +86,11 @@ studentInClass = [0]
             else :
                 print("error")
 
-       elif TorS == 0
+        elif TorS == 0 :
            print("welcome dear ADMIN")
 
 def menu():
-    choose = int(input("1.sign up / 2.log in")
+    choose = int(input("1.sign up / 2.log in"))
     if choose == 1 :
         TorS = int(input("1.teacher 2.student"))
         if TorS == 1 :
@@ -110,4 +101,6 @@ def menu():
         LogIn()
         #:)
         
+            
+
             
