@@ -18,12 +18,9 @@ def SignUpTea():
     qualificalion = input("qualification = ")
     age = input("age = ")
     teachExp = input("teaching experiences = ")
-    #idt += 1
-    #all_id.append(idt)
     teacherInClass.append(name + last_name)
     all_members.append(name + last_name)
     id = all_members.index(name + last_name)
-    #teacherInClass[idt] = Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp)
     info = Model.Teacher.Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp , id)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
@@ -45,13 +42,9 @@ def SignUpStu() :
      dishis = input("diseases history: ")
      moadel = input("moadel: ")
      fathername = input("father's name: ")
-     #ids += 1
-     #all_id.append(ids)
      studentInClass.append(name + lastname)
      all_members.append(name + lastname)
      id = all_members.index(name + lastname)
-     
-     #studentInClass[ids] = Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername)
      info = Model.Student.Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername , id)
      print ("you have been registerd with these information : ")
      print(studentInClass)
