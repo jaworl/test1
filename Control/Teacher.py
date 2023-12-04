@@ -23,7 +23,7 @@ def SignUpTea():
     print(teacherInClass)
 
 def SaveTea():
-    f = open("C:/Users/ASUS/Desktop/Programs/26mordad/13mehr/studentinfo.txt" , "w")
+    f = open("C:/Users/ASUS/Desktop/Programs/26mordad/13mehr/teacherinfo.txt" , "w")
     f.write("Name: " + name + "\n")
     f.write("Lastname: " + last_name + "\n")
     f.write("Lesson: " + telephone + "\n")
