@@ -21,8 +21,6 @@ def SignUpTea():
     info = Model.Teacher.Teacher(name,last_name,lesson,telephone,qualificalion,age,teachExp , id)
     print ("you have been registerd with these information : ")
     print(teacherInClass)
-
-def SaveTea():
     f = open("C:/Users/ASUS/Desktop/Programs/26mordad/13mehr/teacherinfo.txt" , "w")
     f.write("Name: " + name + "\n")
     f.write("Lastname: " + last_name + "\n")
