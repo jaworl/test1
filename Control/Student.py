@@ -21,8 +21,20 @@ def SignUpStu() :
      info = Model.Student.Student(name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername , id)
      print ("you have been registerd with these information : ")
      print(studentInClass)
+     f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt" , "w")
+     f.write("Name: " + name + "\n")
+     f.write("Lastname: " + lastname + "\n")
+     f.write("Classroom: " + classroom + "\n")
+     f.write("Address: " + address + "\n")
+     f.write("PostCode: " + postcode + "\n")
+     f.write("Telephone: " + telephone + "\n")
+     f.write("Diseases History: " + dishis + "\n")
+     f.write("Moadel: " + moadel + "\n")
+     f.write("Father's Name: " + fathername + "\n")
+     f.write("ID: " + id + "\n")
+     f.close()
 
-    
+ #ATTENTION   
 def show() :
     f = open("C:/Users/ASUS/Desktop/Programs/26mordad/13mehr/studentinfo.txt" , "w")
     lines = f.readlines()
