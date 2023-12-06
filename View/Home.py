@@ -14,7 +14,8 @@ def LogIn() :
                 Index1 = all_members.index(name1 + last_name1)
                 if ID1 == Index1 :
                    examine = input("you loged in. do you want to add or delete an new exam?: Yes or No")
-                        
+                        if examine = "yes" :
+                                Control.Exam.Exam()
                 else :
                     print("wrong id.try again")
             else :
