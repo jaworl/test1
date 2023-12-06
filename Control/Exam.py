@@ -7,7 +7,7 @@ def TakeExam() :
     rank = input("rank: ")
 
     examRes = Model.Exam(studentName , lesson , date , score , rank)
-    f = open("C:/Users/ASUS/Desktop/Programs/26mordad/13mehr/studentinfo.txt" , "w")
+    f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt" , "w")
     f.write("Lesson: " + lesson + "\n")
     f.write("Date: " + date + "\n")
     f.write("Score: " + score + "\n")
