@@ -1,8 +1,5 @@
-import Model.Teacher
-import Model.Student
 import Control.Teacher
 import Control.Student
-
 
 def LogIn() :
         global teacherInClass
