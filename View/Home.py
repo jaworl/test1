@@ -17,7 +17,7 @@ def LogIn() :
                         if examine == "a" :
                                 Control.Exam.TakeExam()
                         elif examine == "b" :
-                                Control.Student.Show()
+                                Control.Student.show()
 
                     else :
                     print("wrong id.try again")
