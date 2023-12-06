@@ -13,12 +13,13 @@ def LogIn() :
                 ID1 = input("enter your ID: ")
                 Index1 = all_members.index(name1 + last_name1)
                 if ID1 == Index1 :
-                   examine = input("you loged in. do you want to add an new exam?: Yes or No")
-                        if examine == "yes" :
+                   examine = input("you loged in. you have 2 options: a) add exam b) student list")
+                        if examine == "a" :
                                 Control.Exam.TakeExam()
-                        elif examine == "no" :
-                                print("OK!")
-                else :
+                        elif examine == "b" :
+                                Control.Student.Show()
+
+                    else :
                     print("wrong id.try again")
             else :
                 print("error")
