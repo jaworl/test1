@@ -7,6 +7,7 @@ import Control.Student
 def LogIn() :
         global teacherInClass
         global studentInClass
+        global all_members
         TorS = int(input("1.teacher 2.student"))
         if TorS == 1 :
             name1 = input("enter your name: ")
