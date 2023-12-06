@@ -1,6 +1,7 @@
 import Model.Exam
 def TakeExam() :
     studentName = input("enter student's name: ")
+    examID = input("enter exam's ID: ")
     lesson = input("enter the lesson's name: ")
     date = input("date: ")
     score = input("score: ")
