@@ -13,7 +13,7 @@ def LogIn() :
                 ID1 = input("enter your ID: ")
                 Index1 = all_members.index(name1 + last_name1)
                 if ID1 == Index1 :
-                   examine = input("you loged in. you have 2 options: a) add exam b) student list")
+                   examine = input("you loged in. you have 2 options: a) add exam - b) student list")
                         if examine == "a" :
                                 Control.Exam.TakeExam()
                         elif examine == "b" :
