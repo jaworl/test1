@@ -36,7 +36,7 @@ def SignUpStu() :
 
  #ATTENTION   
 def show() :
-    f = open("C:/Users/ASUS/Desktop/Programs/26mordad/13mehr/studentinfo.txt" , "w")
+    f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt" , "w")
     lines = f.readlines()
     f.close()
     print(lines)
