@@ -10,7 +10,7 @@ def TakeExam() :
 
     examRes = Model.Exam(studentName , examID , lesson , date , score , rank , teacherName)
     f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt" , "w")
-    f.write("Student's name: " 
+    f.write("Student's name: " + studentName + "\n")
     f.write("Lesson: " + lesson + "\n")
     f.write("Date: " + date + "\n")
     f.write("Score: " + score + "\n")
