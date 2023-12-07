@@ -1,5 +1,5 @@
+
 def saveSignUpStudent (name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername,id):
-    View.view_signup.SignUpStu()
     f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt", "w")
     f.write("Name: " + name + "\n")
     f.write("Lastname: " + lastname + "\n")
@@ -14,7 +14,6 @@ def saveSignUpStudent (name,lastname,classroom,address,postcode,telephone,dishis
     f.close()
 
 def saveSignUpTeacher (name,last_name,lesson,telephone,qualification,age,teachExp, id):
-    View.view_signup.SignUpStu()
     f = open("C:/Users/ASUS/Desktop/schooool/teacherinfo.txt", "w")
     f.write("Name: " + name + "\n")
     f.write("Lastname: " + last_name + "\n")

@@ -1,6 +1,7 @@
 import Model.model_teacher
 import Model.model_student
 import Control.control_signup
+
 ids=0
 studentInClass = [0]
 def SignUpStu():
@@ -49,4 +50,3 @@ def SignUpTea():
     info = Model.model_teacher.Teacher(name,last_name,lesson,telephone,qualification,age,teachExp , id)
     print("you have been registerd ")
     Control.control_signup.saveSignUpTeacher()
-    

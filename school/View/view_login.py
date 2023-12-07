@@ -1,7 +1,9 @@
-import Control.control_student
-import Control.control_teacher
+import Control.control_login
 import Control.control_exam
+import View.view_signup
 def LogIn():
+    View.view_signup.studentInClass
+    View.view_signup.teacherInClass
     global teacherInClass
     global studentInClass
     global all_members
