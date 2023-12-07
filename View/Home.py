@@ -51,7 +51,8 @@ def menu():
     if choose == 2 :
         LogIn()
         #:)
-menu()
+
+#menu toye file dige bashe
             
 
             
