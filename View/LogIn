@@ -1,5 +1,6 @@
 import Control.Exam
 import Control.Student
+import Control.Teacher
 def LogIn() :
         global teacherInClass
         global studentInClass
