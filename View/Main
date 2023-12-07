@@ -1,0 +1,4 @@
+import View.Home
+hi = input("Hello, Welcome to Atomic Energy HighSchool. Please type "Hi" to start.)
+if hi == "hi" :
+  View.Home.Menu()
