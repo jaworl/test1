@@ -24,8 +24,8 @@ def SignUpStu():
     studentInClass.append(name + lastname)
     all_members.append(name + lastname)
     id = all_members.index(name + lastname)
-    info = Model.model_student.Student(name, lastname, classroom, address, postcode, telephone, dishis, moadel ,   fathername, id)
-    Control.control_signup.saveSignUpStudent()
+    student = Model.model_student.Student(name, lastname, classroom, address, postcode, telephone, dishis, moadel ,   fathername, id)
+    Control.control_signup.saveSignUpStudent(student)
 
 all_id = [0]
 teacherInClass = [0]
