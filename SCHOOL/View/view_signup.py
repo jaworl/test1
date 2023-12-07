@@ -47,6 +47,6 @@ def SignUpTea():
     teacherInClass.append(name + last_name)
     all_members.append(name + last_name)
     id = all_members.index(name + last_name)
-    info = Model.model_teacher.Teacher(name,last_name,lesson,telephone,qualification,age,teachExp , id)
+    teacher = Model.model_teacher.Teacher(name,last_name,lesson,telephone,qualification,age,teachExp , id)
     print("you have been registerd ")
-    Control.control_signup.saveSignUpTeacher()
+    Control.control_signup.saveSignUpTeacher(teacher)
