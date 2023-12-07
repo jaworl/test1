@@ -1,5 +1,5 @@
 
-def saveSignUpStudent (name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername,id):
+def saveSignUpStudent (student):
     f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt", "w")
     f.write("Name: " + name + "\n")
     f.write("Lastname: " + lastname + "\n")
