@@ -1,4 +1,5 @@
 def 
+
     f = open("C:/Users/ASUS/Desktop/schooool/teacherinfo.txt" , "w")
     f.write("Name: " + name + "\n")
     f.write("Lastname: " + last_name + "\n")
