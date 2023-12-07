@@ -1,4 +1,3 @@
-
 def saveSignUpStudent (name,lastname,classroom,address,postcode,telephone,dishis,moadel,fathername,id):
     View.view_signup.SignUpStu()
     f = open("C:/Users/ASUS/Desktop/schooool/studentinfo.txt", "w")
