@@ -56,11 +56,11 @@ class Teacher:
     def set_id(self, id):
         self.id = id
 
-
+chemidonam = t.split()
 def findTeacherByID(id):
     for t in Teacher.teachers:
         if t.ID == id:
-            return t.split()
+            return chemidonam[0] , chemidonam[1]
         return None
 
 def findIdTeacherByLastname(teacherLName):
