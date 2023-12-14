@@ -76,14 +76,14 @@ class Student:
     def set_fatherName(self, fatherName):
         self.fatherName = fatherName
 
-    def findStudentByID(id):
+    def findNameStudentByID(id):
         for s in Student.students:
             if s.ID == id:
-                return s
+                return s.split()
             return None
 
-    def findStudentByLastname(lastname):
-        for s in Student.students:
-            if s.ID == id:
-                return s
+    def findIdStudentByLastname(lastname):
+        for nemidonam in range len(Student.students)
+            if lastname in nemidonam.split():
+                return Student.students[nemidonam]
             return None
