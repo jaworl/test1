@@ -60,5 +60,11 @@ class Teacher:
 def findTeacherByID(id):
     for t in Teacher.teachers:
         if t.ID == id:
-            return t
+            return t.split()
         return None
+
+def findIdTeacherByLastname(teacherLName):
+        for nemidonam in range len(Teacher.teachers)
+            if lastname in nemidonam.split():
+                return Teacher.teachers[nemidonam]
+            return None
