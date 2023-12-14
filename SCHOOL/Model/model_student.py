@@ -75,11 +75,11 @@ class Student:
 
     def set_fatherName(self, fatherName):
         self.fatherName = fatherName
-
+    chemidonam = s.split()
     def findNameStudentByID(id):
         for s in Student.students:
             if s.ID == id:
-                return s.split()
+                return chemidonam[0] , chemidonam[1]
             return None
 
     def findIdStudentByLastname(lastname):
