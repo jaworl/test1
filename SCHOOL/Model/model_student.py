@@ -75,3 +75,12 @@ class Student:
 
     def set_fatherName(self, fatherName):
         self.fatherName = fatherName
+
+    def findStudentByID(id):
+        for s in Student.students:
+            if s.ID == id:
+                return s
+            return None
+
+  
+

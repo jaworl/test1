@@ -1,0 +1,8 @@
+Name: f
+Lastname: g
+Classroom: d
+Address: s
+PostCode: h
+Telephone: c
+Diseases History: v
+Moadel: t

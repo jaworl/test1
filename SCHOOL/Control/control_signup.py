@@ -2,14 +2,14 @@
 def saveSignUpStudent (student):
     f = open("C:/Users/user/Documents/SCHOOL/save/studentinfo.txt", "w")
     f.write("Name: " + student.name + "\n")
-    f.write("Lastname: " + student.slastname + "\n")
+    f.write("Lastname: " + student.lastname + "\n")
     f.write("Classroom: " + student.classroom + "\n")
     f.write("Address: " + student.address + "\n")
     f.write("PostCode: " + student.postcode + "\n")
     f.write("Telephone: " + student.telephone + "\n")
     f.write("Diseases History: " + student.dishis + "\n")
     f.write("Moadel: " + student.moadel + "\n")
-    f.write("Father's Name: " + student.fathername + "\n")
+    f.write("Father's Name: " + student.fatherName + "\n")
     f.write("ID: " + student.id + "\n")
     f.close()
 
