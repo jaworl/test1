@@ -16,7 +16,7 @@ def saveSignUpStudent (student):
 def saveSignUpTeacher (teacher):
     f = open("C:/Users/user/Documents/SCHOOL/save/teacherinfo.txt", "w")
     f.write("Name: " + teacher.name + "\n")
-    f.write("Lastname: " + teacher.last_name + "\n")
+    f.write("Lastname: " + teacher.lastname + "\n")
     f.write("Lesson: " + teacher.lesson + "\n")
     f.write("Telephone: " + teacher.telephone + "\n")
     f.write("Qualification: " + teacher.qualification + "\n")

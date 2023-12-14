@@ -82,5 +82,8 @@ class Student:
                 return s
             return None
 
-  
-
+    def findStudentByLastname(lastname):
+        for s in Student.students:
+            if s.ID == id:
+                return s
+            return None
